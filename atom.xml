@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>高峰的技术博客</title>
   
-  
+  <subtitle>高峰的前端技术博客-建站技术</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.gaofeng109.cn/"/>
