@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>高峰的技术博客</title>
-  
+  <icon>https://www.gravatar.com/avatar/45ac0ee429e9cfadbcc5597eba64b9ff</icon>
   <subtitle>高峰的前端技术博客-建站技术</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>Gao Feng</name>
-    
+    <email>jhhuang1993@foxmail.com##填写你的email地址</email>
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
