@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+
+  
 
     
 
-    
+      <title>
+        
+          Hello World |
+            
+              高峰的技术博客
+      </title>
+      <meta name="author" content="Gao Feng">
+      <meta name="version" content="1.0.0">
+      <meta name="keywords" content="高峰的技术博客">
+      <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Quick StartCreate a new post1$ hexo new &#34;My New Post...">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
 
-    <title>Hello World | 高峰的技术博客</title>
-    <meta name="author" content="Gao Feng">
-    <meta name="version" content="1.0.0">
-    <meta name="keywords" content="高峰的技术博客">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.Quick StartCreate a new post1$ hexo new &#34;My New Post...">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+      
+        <link rel="alternate" href="/atom.xml" title="高峰的技术博客" type="application/atom+xml">
+        
+          
+            <link rel="icon" href="/images/favicon.ico">
+            
 
-    
-    <link rel="alternate" href="/atom.xml" title="高峰的技术博客" type="application/atom+xml">
-    
-    
-    <link rel="icon" href="/images/favicon.ico">
-    
-
-    <link rel="stylesheet" href="/css/style.css">
+              <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
-    <main class="app">
-        <header class="header clearfix">
+  <main class="app">
+    <header class="header clearfix">
     <div id="nav" class="nav">
     <div class="nav-mobile">
         <button id="open-panel" class="open-panel nav-mobile-item"><i class="icon-documents"></i></button>
@@ -86,7 +93,8 @@
 
 </header>
 
-        <div id="content" class="content"><article class="article" itemscope itemprop="blogPost">
+      <div id="content" class="content">
+        <article class="article" itemscope itemprop="blogPost">
     
     <header class="article-header">
         
@@ -144,8 +152,9 @@
     </script>
 </div>
 
-</div>
-        <footer class="footer">
+
+      </div>
+      <footer class="footer">
     Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, Theme by <a href="https://github.com/sanonz/hexo-theme-concise" target="_blank">Concise</a>
 
     
@@ -161,55 +170,56 @@
     
 </footer>
 
-    </main>
+  </main>
 
-    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript">
-    $(function() {
-        var nodes = {
-            nav: $('#nav'),
-            aside: $('#aside'),
-            asideInner: $('#aside-inner'),
-            navInner: $('#nav-inner')
-        };
+  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.9.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      var nodes = {
+        nav: $('#nav'),
+        aside: $('#aside'),
+        asideInner: $('#aside-inner'),
+        navInner: $('#nav-inner')
+      };
 
-        var doing = false;
-        nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function() {
-            if (nodes.aside.hasClass('mobile-open')) {
-                nodes.aside.removeClass('mobile-open');
-            } else {
-                nodes.aside.removeClass('mobile-close panel-show');
-            }
-            doing = false;
-        });
-        $('#open-panel, #aside-mask').on('click', function() {
-            if (doing) {
-                return;
-            }
-            
-            if (nodes.aside.hasClass('panel-show')) {
-                nodes.aside.addClass('mobile-close');
-            } else {
-                nodes.aside.addClass('mobile-open panel-show');
-            }
-        });
-        $('#open-menus').on('click', function() {
-            nodes.navInner.slideToggle();
-        });
-
-        if (window.innerWidth <= 960) {
-            setTimeout(function() {
-                nodes.navInner.slideUp();
-            }, 3000);
+      var doing = false;
+      nodes.asideInner.on('webkitAnimationEnd mozAnimationEnd oAnimationEnd oanimationend animationend', function () {
+        if (nodes.aside.hasClass('mobile-open')) {
+          nodes.aside.removeClass('mobile-open');
+        } else {
+          nodes.aside.removeClass('mobile-close panel-show');
         }
+        doing = false;
+      });
+      $('#open-panel, #aside-mask').on('click', function () {
+        if (doing) {
+          return;
+        }
+
+        if (nodes.aside.hasClass('panel-show')) {
+          nodes.aside.addClass('mobile-close');
+        } else {
+          nodes.aside.addClass('mobile-open panel-show');
+        }
+      });
+      $('#open-menus').on('click', function () {
+        nodes.navInner.slideToggle();
+      });
+
+      if (window.innerWidth <= 960) {
+        setTimeout(function () {
+          nodes.navInner.slideUp();
+        }, 3000);
+      }
     });
+  </script>
+  
+    <script type="text/javascript" src="/js/scrollspy.min.js"></script>
+    <script type="text/javascript">
+      $(document.body).scrollspy({ target: '#aside-inner' });
     </script>
-    
-        <script type="text/javascript" src="/js/scrollspy.min.js"></script>
-        <script type="text/javascript">
-        $(document.body).scrollspy({target: '#aside-inner'});
-        </script>
     
 
 </body>
+
 </html>
